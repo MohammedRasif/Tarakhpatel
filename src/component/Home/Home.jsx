@@ -3,6 +3,7 @@ import Cadensa from "../Page.jsx/Cadensa";
 import Faq from "../Page.jsx/Faq";
 import Longevity from "../Page.jsx/Longevity";
 import SecondSection from "../Page.jsx/SecondSection";
+import Trusted from "../Page.jsx/Trusted";
 import WhyChoice from "../Page.jsx/WhyChoice";
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
             <SecondSection></SecondSection>
             <Cadensa></Cadensa>
             <Longevity></Longevity>
+            <Trusted></Trusted>
             <WhyChoice></WhyChoice>
             <Faq></Faq>
         </div>
