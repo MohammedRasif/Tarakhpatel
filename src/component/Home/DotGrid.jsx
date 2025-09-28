@@ -179,19 +179,16 @@ const DotGrid = ({
       const rect = canvasRef.current.getBoundingClientRect();
       pointerRef.current.x = e.clientX - rect.left;
       pointerRef.current.y = e.clientY - rect.top;
-      // We are removing the inertia and shock logic here to simplify the effect.
-      // If you want to re-add it, you can place it back here.
+    
     };
 
     const throttledMove = throttle(onMove, 16); // Throttle less to make it feel smoother
     window.addEventListener("mousemove", throttledMove, { passive: true });
 
-    // We are removing the onClick listener as well.
-    // window.addEventListener("click", onClick);
 
     return () => {
       window.removeEventListener("mousemove", throttledMove);
-      // window.removeEventListener("click", onClick);
+
     };
   }, []);
 
