@@ -8,6 +8,7 @@ function Banner() {
   const currentIntake = 1500;
   const totalGoal = 2000;
   const progressPercentage = (currentIntake / totalGoal) * 100;
+
   useEffect(() => {
     // Animate progress on mount
     const timer = setTimeout(() => {
@@ -16,6 +17,7 @@ function Banner() {
 
     return () => clearTimeout(timer);
   }, [progressPercentage]);
+
   return (
     <div className="bg-black h-screen relative">
       <div className="absolute inset-0">
@@ -32,12 +34,11 @@ function Banner() {
         />
       </div>
 
-      {/* main point */}
+      {/* Main content overlay */}
       <div className="flex flex-col lg:flex-row items-center justify-between container mx-auto h-full relative Archivo px-4 py-6">
-        {/* left side section */}
+        {/* Left side section */}
         <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
           <p className="text-gray-300 bg-black text-[14px] flex items-center border border-gray-700 rounded-full px-4 py-1 w-fit mb-4 sm:text-[12px] md:text-[14px]">
-            {" "}
             <LuHeartHandshake className="text-blue-600 mr-2" size={18} />
             Care You Can Trust
           </p>
@@ -65,7 +66,6 @@ function Banner() {
                 👉 Join the Waitlist
               </span>
             </button>
-
             <button className="border border-gray-500 rounded-full px-8 py-3 font-semibold cursor-pointer group bg-black sm:px-4 sm:py-2 md:px-6 md:py-2 lg:px-8 lg:py-3">
               <span className="inline-block transition-transform duration-200 group-hover:scale-105">
                 Learn how Cadensa works →
@@ -96,13 +96,13 @@ function Banner() {
           </div>
         </div>
 
-        {/* right side section */}
+        {/* Right side section */}
         <div className="w-full lg:w-1/2 flex justify-end relative lg:mt-0 mt-8">
           <div>
             <img src={images} className="h-[64vh] w-auto sm:h-[40vh] md:h-[50vh] lg:h-[64vh]" alt="" />
           </div>
 
-          {/* progress section */}
+          {/* Progress section */}
           <div className="bg-white/30 backdrop-blur-md rounded-2xl p-6 shadow-lg h-[22vh] w-80 absolute bottom-5 right-48 border border-white/20 sm:w-48 sm:h-[15vh] md:w-64 md:h-[18vh] lg:w-80 lg:h-[22vh]">
             {/* Header with icon and title */}
             <div className="flex items-center gap-4 mb-6 sm:gap-2 md:gap-3 lg:gap-4">
