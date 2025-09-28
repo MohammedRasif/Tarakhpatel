@@ -8,10 +8,13 @@ function Banner() {
         <DotGrid
           dotSize={4}
           gap={15}
-          baseColor="#B4B4B6"
-          activeColor="#311DB5"
-          proximity={130}
-          opacity={0.3}
+          baseColor="#1F2937" // Tailwind gray-700
+          activeColor="#0000FF" // Distinct blue color
+          proximity={150} // Larger effect area
+          shockRadius={200}
+          shockStrength={8}
+          resistance={750}
+          returnDuration={1.5}
         />
       </div>
     </div>
