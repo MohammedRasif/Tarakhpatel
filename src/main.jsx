@@ -6,7 +6,6 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Roots from './Root/Roots.jsx';
-import ErrorPage from './component/ErrorPage/ErrorPage.jsx';
 import Home from './component/Home/Home.jsx';
 import UserDashboardLayout from './component/UserDashboard/UserDashboardLayout/UserDashboardLayout.jsx';
 import Dashboard from './component/UserDashboard/UserDashboardPages/Dashboard.jsx';
@@ -15,7 +14,6 @@ const router = createBrowserRouter([
   {
     path: "/",
     element:<Roots/> ,
-    errorElement:<ErrorPage/>,
     children: [
       {
         path: "/",

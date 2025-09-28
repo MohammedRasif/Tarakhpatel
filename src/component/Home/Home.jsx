@@ -1,7 +1,9 @@
 import Banner from "../Page.jsx/Banner";
 import Cadensa from "../Page.jsx/Cadensa";
+import Faq from "../Page.jsx/Faq";
 import Longevity from "../Page.jsx/Longevity";
 import SecondSection from "../Page.jsx/SecondSection";
+import WhyChoice from "../Page.jsx/WhyChoice";
 
 const Home = () => {
     return (
@@ -10,6 +12,8 @@ const Home = () => {
             <SecondSection></SecondSection>
             <Cadensa></Cadensa>
             <Longevity></Longevity>
+            <WhyChoice></WhyChoice>
+            <Faq></Faq>
         </div>
     );
 }
