@@ -4,6 +4,7 @@ import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import ReactLenis from "lenis/react";
 import { useRef } from "react";
+// Local image imports - make sure the paths are correct
 import img1 from "../../image/Frame 1707483021.png";
 import img2 from "../../image/Frame 1707483021 (1).png";
 import img3 from "../../image/Frame 1707483021 (2).png";
@@ -13,28 +14,53 @@ import img6 from "../../image/Frame 1707483021 (5).png";
 
 const projects = [
   {
-    title: "Project 1",
-    src: "https://res.cloudinary.com/dfsu0cuvb/image/upload/v1737529180/cld-sample-4.jpg",
+    title: "Personalized Not Generic",
+    description:
+      "Tailored recommendations based on your unique health profile and goals.",
+    buttonText: "Learn More",
+
+    src: img1,
   },
   {
-    title: "Project 2",
-    src: "https://res.cloudinary.com/dfsu0cuvb/image/upload/v1737529180/cld-sample-5.jpg",
+    title: "Cutting-Edge Science",
+    description:
+      "Leveraging the latest research and advancements in health and longevity.",
+    buttonText: "Discover More",
+    src: img2,
   },
   {
-    title: "Project 3",
-    src: "https://res.cloudinary.com/dfsu0cuvb/image/upload/v1737529180/cld-sample-3.jpg",
+    title: "Holistic Approach",
+    description:
+      "Addressing all aspects of your well-being, from diet to mind-body connection.",
+    buttonText: "Explore Options",
+    src: img3,
   },
   {
-    title: "Project 4",
-    src: "https://res.cloudinary.com/dfsu0cuvb/image/upload/v1737529180/cld-sample-2.jpg",
+    title: "Expert Guidance",
+    description:
+      "Benefit from the wisdom and support of our experienced health professionals.",
+    buttonText: "Meet Our Team",
+    src: img4,
   },
   {
-    title: "Project 5",
-    src: "https://res.cloudinary.com/dfsu0cuvb/image/upload/v1737529179/samples/dessert-on-a-plate.jpg",
+    title: "Community & Support",
+    description:
+      "Join a vibrant community on a shared journey towards a healthier future.",
+    buttonText: "Join Now",
+    src: img5,
   },
 ];
 
-const StickyCard_001 = ({ i, title, src, progress, range, targetScale }) => {
+const StickyCard_001 = ({
+  i,
+  title,
+  src,
+  progress,
+  range,
+  targetScale,
+  description,
+  buttonText,
+}) => {
   const container = useRef(null);
 
   const scale = useTransform(progress, range, [1, targetScale]);
@@ -42,16 +68,39 @@ const StickyCard_001 = ({ i, title, src, progress, range, targetScale }) => {
   return (
     <div
       ref={container}
-      className="sticky top-0 flex items-center justify-center "
+      className="sticky top-0 flex items-center justify-center w-full min-h-screen py-20"
     >
       <motion.div
         style={{
           scale,
-          top: `calc(-5vh + ${i * 20 + 250}px)`,
+          top: `calc(-5vh + ${i * 0 + 150}px)`,
         }}
-        className="rounded-4xl relative -top-1/4 flex h-[300px] w-[500px] origin-top flex-col overflow-hidden"
+        className="relative h-[400px] w-full max-w-[1500px] mx-auto rounded-4xl overflow-hidden  "
       >
-        <img src={src} alt={title} className="h-full w-full object-cover" />
+        {/* Background Image */}
+        <img
+          src={src}
+          alt={title}
+          className="absolute  h-full w-full object-cover"
+        />
+
+        {/* Overlay for darkening and gradient */}
+        <div className="absolute "></div>
+
+        {/* Text Content - Absolutely positioned on the left */}
+        <div className="absolute inset-y-0 left-0 p-8 text-white flex flex-col justify-center max-w-lg">
+          {" "}
+          {/* max-w-lg to control text width */}
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium leading-tight mb-4">
+            {title}
+          </h2>
+          <p className="text-base sm:text-lg text-gray-300 mb-8">
+            {description}
+          </p>
+          <button className="self-start px-6 py-3 rounded-full border border-teal-500 text-teal-500 hover:bg-teal-500 hover:text-white transition-colors duration-300">
+            {buttonText}
+          </button>
+        </div>
       </motion.div>
     </div>
   );
@@ -61,7 +110,8 @@ const Skiper16 = () => {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,
-    offset: ["start start", "end end"],
+
+    offset: ["start center", "end center"], // This defines the scroll range relative to the viewport center
   });
 
   return (
@@ -70,11 +120,6 @@ const Skiper16 = () => {
         ref={container}
         className="relative flex w-full flex-col items-center justify-center pb-[100vh] pt-[10vh]"
       >
-        <div className="absolute left-1/2 top-[10%] grid -translate-x-1/2 content-start justify-items-center gap-6 text-center">
-          <span className="after:from-background after:to-foreground relative max-w-[12ch] text-xs uppercase leading-tight opacity-40 after:absolute after:left-1/2 after:top-full after:h-16 after:w-px after:bg-gradient-to-b after:content-['']">
-            scroll down to see card stack
-          </span>
-        </div>
         {projects.map((project, i) => {
           const targetScale = Math.max(
             0.5,
@@ -98,8 +143,21 @@ const Skiper16 = () => {
 
 function WhyChoice() {
   return (
-    <div>
-      <Skiper16 />
+    <div className="">
+      <div className=" w-full flex justify-center items-center">
+        <div className="py-8 sm:py-10 w-full max-w-xl px-4 flex flex-col justify-center items-center text-center">
+          <h1 className="text-white text-3xl sm:text-4xl md:text-5xl font-medium leading-tight">
+            Why Choose Cadensa?
+          </h1>
+          <p className="text-base sm:text-lg text-gray-300 pt-5">
+            Because longevity is more than years lived—it's energy, clarity, and
+            vitality every day.
+          </p>
+        </div>
+      </div>
+      <div className="-my-96">
+        <Skiper16 />
+      </div>
     </div>
   );
 }
