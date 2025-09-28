@@ -7,8 +7,8 @@ const Navbar = () => {
         <div>
           <img src={image} className="h-12" alt="Logo" />
         </div>
-        <div className="border border-gray-700 rounded-full px-4 py-1 flex items-center gap-4 cursor-pointer">
-          <button className="text-[16px] px-4 py-2 rounded cursor-pointer transition-transform duration-300 ease-in-out hover:scale-110">
+        <div className=" bg-gradient-to-r from-[#00953B] to-[#0068F0] border border-gray-700 rounded-full px-4 py-1 flex items-center gap-4 cursor-pointer">
+          <button className=" font-semibold text-[16px] px-4 py-2 rounded cursor-pointer transition-transform duration-300 ease-in-out hover:scale-110">
             Join the Waitlist
           </button>
         </div>
