@@ -15,8 +15,8 @@ const Home = () => {
             <Cadensa></Cadensa>
             <Longevity></Longevity>
             <Trusted></Trusted>
-            <Marque></Marque>
             <WhyChoice></WhyChoice>
+             <Marque></Marque>
             <Faq></Faq>
         </div>
     );
