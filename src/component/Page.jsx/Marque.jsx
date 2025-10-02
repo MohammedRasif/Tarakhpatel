@@ -5,7 +5,7 @@ import image from "../../image/Image (26).png";
 function Marque() {
   return (
     <div className="pb-28">
-      <p className="text-gray-300 pl-10 py-5 pb-16 text-center">
+      <p className="text-gray-300 pl-10 py-5 pb-16 text-center text-[18px]">
         Works with the devices and labs you already use
       </p>
 

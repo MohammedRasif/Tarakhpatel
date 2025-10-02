@@ -8,18 +8,18 @@ import Trusted from "../Page.jsx/Trusted";
 import WhyChoice from "../Page.jsx/WhyChoice";
 
 const Home = () => {
-    return (
-        <div className="bg-black">
-            <Banner />
-            <SecondSection></SecondSection>
-            <Cadensa></Cadensa>
-            <Longevity></Longevity>
-            <Trusted></Trusted>
-            <WhyChoice></WhyChoice>
-             <Marque></Marque>
-            <Faq></Faq>
-        </div>
-    );
-}
+  return (
+    <div className="bg-black">
+      <Banner />
+      <SecondSection></SecondSection>
+      <Cadensa></Cadensa>
+      <Longevity></Longevity>
+      <WhyChoice></WhyChoice>
+      <Trusted></Trusted>
+      <Marque></Marque>
+      <Faq></Faq>
+    </div>
+  );
+};
 
 export default Home;

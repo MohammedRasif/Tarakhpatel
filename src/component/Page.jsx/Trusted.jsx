@@ -16,7 +16,7 @@ function Trusted() {
       <div className="flex items-center gap-8 container mx-auto">
         {/* Left side - Doctor profile */}
         <div className="w-2/3">
-          <div className="bg-neutral-900 border border-gray-700 rounded-lg p-3 relative ">
+          <div className="bg-neutral-900 border border-green-900 rounded-lg p-3 relative ">
             <div className=" items-start gap-4 relative">
               <div className="items-center justify-start flex space-x-3 pb-2">
                 <img
@@ -51,7 +51,7 @@ function Trusted() {
         {/* Right side - Advisory board and partnerships */}
         <div className="w-1/3 space-y-6">
           {/* Expert Advisory Board */}
-          <div className="bg-neutral-900 border border-gray-700 rounded-lg p-3">
+          <div className="bg-neutral-900 border border-green-900 rounded-lg p-3">
             <div className="flex items-center gap-2 mb-3">
               <h3 className="text-white font-semibold">
                 Expert Advisory Board
@@ -64,7 +64,7 @@ function Trusted() {
           </div>
 
           {/* Research Partnerships */}
-          <div className="bg-neutral-900 border border-gray-700 rounded-lg p-3">
+          <div className="bg-neutral-900 border border-green-900 rounded-lg p-3">
             <h3 className="text-white font-semibold mb-3">
               Research Partnerships
             </h3>

@@ -35,15 +35,15 @@ function Banner() {
       </div>
 
       {/* Main content overlay */}
-      <div className="flex flex-col lg:flex-row items-center justify-between container mx-auto h-full relative Archivo px-4 py-6">
+      <div className="flex flex-col lg:flex-row items-center justify-between container mx-auto h-full relative Archivo px-4 py-6 lg:pt-10 pt-28">
         {/* Left side section */}
         <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
-          <p className="text-gray-300 bg-black text-[14px] flex items-center border border-gray-700 rounded-full px-4 py-1 w-fit mb-4 sm:text-[12px] md:text-[14px]">
+          <p className="text-gray-300 bg-black lg:text-[14px] text-[11px] flex items-center border border-gray-700 rounded-full px-4 py-1 w-fit mb-4 sm:text-[12px] md:text-[14px]">
             <LuHeartHandshake className="text-blue-600 mr-2" size={18} />
             Care You Can Trust
           </p>
 
-          <h1 className="text-white text-[75px] font-medium leading-tight sm:text-[40px] md:text-[60px] lg:text-[75px]">
+          <h1 className="text-white text-[30px] font-medium leading-tight sm:text-[40px] md:text-[60px] lg:text-[75px]">
             The World's First{" "}
             <span className="bg-clip-text text-transparent bg-gradient-to-b from-[#00953B] to-[#0068F0] font-[550]">
               Longevity
@@ -53,15 +53,15 @@ function Banner() {
               Operating System
             </span>
           </h1>
-          <p className="text-gray-400 text-[20px] pt-5 sm:text-[14px] md:text-[16px] lg:text-[20px]">
+          <p className="text-gray-400 text-[14px] pt-5 sm:text-[14px] md:text-[16px] lg:text-[20px]">
             Unify your health data wearables, labs, lifestyle, and medical
             records into adaptive, personalized health span plans.
           </p>
-          <p className="text-gray-400 text-[16px] pt-5 sm:text-[12px] md:text-[14px] lg:text-[16px]">
+          <p className="text-gray-400 text-[14px] pt-5 sm:text-[12px] md:text-[14px] lg:text-[16px]">
             Add years to your life by adding life to your years.
           </p>
-          <div className="text-gray-300 text-[16px] space-x-6 mt-6 flex flex-wrap sm:space-x-2 md:space-x-4 lg:space-x-6">
-            <button className="rounded-full px-8 py-3 text-white font-semibold bg-gradient-to-r from-[#00953B] to-[#0068F0] cursor-pointer group sm:px-4 sm:py-2 md:px-6 md:py-2 lg:px-8 lg:py-3">
+          <div className="text-gray-300 lg:text-[16px] text-[13px] space-x-6 mt-6 flex flex-wrap sm:space-x-2 md:space-x-4 lg:space-x-6">
+            <button className="rounded-full px-8 py-3 text-white lg:mb-0 mb-5 font-semibold bg-gradient-to-r from-[#00953B] to-[#0068F0] cursor-pointer group sm:px-4 sm:py-2 md:px-6 md:py-2 lg:px-8 lg:py-3">
               <span className="inline-block transition-transform duration-200 group-hover:scale-105">
                 👉 Join the Waitlist
               </span>
@@ -97,7 +97,7 @@ function Banner() {
         </div>
 
         {/* Right side section */}
-        <div className="w-full lg:w-1/2 flex justify-end relative lg:mt-0 mt-8">
+        <div className="hidden sm:block md:block lg:flex w-full lg:w-1/2 justify-end relative lg:mt-0 mt-8">
           <div>
             <img src={images} className="h-[64vh] w-auto sm:h-[40vh] md:h-[50vh] lg:h-[64vh]" alt="" />
           </div>

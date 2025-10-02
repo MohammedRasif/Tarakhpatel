@@ -18,7 +18,6 @@ const projects = [
     description:
       "Tailored recommendations based on your unique health profile and goals.",
     buttonText: "Learn More",
-
     src: img1,
   },
   {
@@ -49,6 +48,13 @@ const projects = [
     buttonText: "Join Now",
     src: img5,
   },
+  {
+    title: "Community & Support",
+    description:
+      "Join a vibrant community on a shared journey towards a healthier future.",
+    buttonText: "Join Now",
+    src: img6,
+  },
 ];
 
 const StickyCard_001 = ({
@@ -62,42 +68,36 @@ const StickyCard_001 = ({
   buttonText,
 }) => {
   const container = useRef(null);
-
   const scale = useTransform(progress, range, [1, targetScale]);
 
   return (
     <div
       ref={container}
-      className="sticky top-0 flex items-center justify-center w-full min-h-screen py-20"
+      className="sticky top-0 flex items-center justify-center w-full mt-60 py-20 -mb-56"
     >
       <motion.div
         style={{
           scale,
           top: `calc(-5vh + ${i * 0 + 150}px)`,
+          zIndex: projects.length - i,
+          backgroundColor: "#000",
         }}
-        className="relative h-[400px] w-full max-w-[1500px] mx-auto rounded-4xl overflow-hidden  "
+        className="relative h-[400px] w-full max-w-[1500px] mx-auto rounded-4xl overflow-hidden"
       >
-        {/* Background Image */}
         <img
           src={src}
           alt={title}
-          className="absolute  h-full w-full object-cover"
+          className="absolute h-full w-full object-cover"
+          style={{ opacity: 1 }}
         />
-
-        {/* Overlay for darkening and gradient */}
-        <div className="absolute "></div>
-
-        {/* Text Content - Absolutely positioned on the left */}
         <div className="absolute inset-y-0 left-0 p-8 text-white flex flex-col justify-center max-w-lg">
-          {" "}
-          {/* max-w-lg to control text width */}
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium leading-tight mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium mb-4">
             {title}
           </h2>
           <p className="text-base sm:text-lg text-gray-300 mb-8">
             {description}
           </p>
-          <button className="self-start px-6 py-3 rounded-full border border-teal-500 text-teal-500 hover:bg-teal-500 hover:text-white transition-colors duration-300">
+          <button className="self-start bg-gradient-to-r from-[#00953B] to-[#0068F0] text-white font-semibold  px-8 py-3 rounded-full border border-gray-400 ">
             {buttonText}
           </button>
         </div>
@@ -110,8 +110,7 @@ const Skiper16 = () => {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,
-
-    offset: ["start center", "end center"], // This defines the scroll range relative to the viewport center
+    offset: ["start start", "end end"],
   });
 
   return (
@@ -121,17 +120,14 @@ const Skiper16 = () => {
         className="relative flex w-full flex-col items-center justify-center pb-[100vh] pt-[10vh]"
       >
         {projects.map((project, i) => {
-          const targetScale = Math.max(
-            0.5,
-            1 - (projects.length - i - 1) * 0.1
-          );
+          const targetScale = 1; // No scaling to ensure same size
           return (
             <StickyCard_001
               key={`p_${i}`}
               i={i}
               {...project}
               progress={scrollYProgress}
-              range={[i * 0.25, 1]}
+              range={[i * 0.15, 1]}
               targetScale={targetScale}
             />
           );
@@ -144,7 +140,7 @@ const Skiper16 = () => {
 function WhyChoice() {
   return (
     <div className="">
-      <div className=" w-full flex justify-center items-center">
+      <div className="w-full flex justify-center items-center">
         <div className="py-8 sm:py-10 w-full max-w-xl px-4 flex flex-col justify-center items-center text-center">
           <h1 className="text-white text-3xl sm:text-4xl md:text-5xl font-medium leading-tight">
             Why Choose Cadensa?
