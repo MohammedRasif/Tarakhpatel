@@ -99,11 +99,15 @@ function Banner() {
         {/* Right side section */}
         <div className="hidden sm:block md:block lg:flex w-full lg:w-1/2 justify-end relative lg:mt-0 mt-8">
           <div>
-            <img src={images} className="h-[64vh] w-auto sm:h-[40vh] md:h-[50vh] lg:h-[64vh]" alt="" />
+            <img
+              src={images}
+              className="h-[64vh] w-auto sm:h-[40vh] md:h-[50vh] lg:h-[64vh]"
+              alt=""
+            />
           </div>
 
           {/* Progress section */}
-          <div className="bg-white/30 backdrop-blur-md rounded-2xl p-6 shadow-lg h-[22vh] w-80 absolute bottom-5 right-48 border border-white/20 sm:w-48 sm:h-[15vh] md:w-64 md:h-[18vh] lg:w-80 lg:h-[22vh]">
+          <div className="bg-white/30 backdrop-blur-md rounded-2xl p-6 shadow-lg h-[22vh] w-80 absolute bottom-5 lg:right-36 right-48 border border-white/20 sm:w-48 sm:h-[15vh] md:w-64 md:h-[18vh] lg:w-80 lg:h-[22vh]">
             {/* Header with icon and title */}
             <div className="flex items-center gap-4 mb-6 sm:gap-2 md:gap-3 lg:gap-4">
               <div className="relative w-12 h-12 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12">
@@ -150,10 +154,10 @@ function Banner() {
               </div>
             </div>
           </div>
-          <div className="text-white absolute top-5 right-48 flex space-x-3 sm:flex-col sm:space-y-2 sm:right-4 md:flex-row md:space-x-2 md:right-24 lg:flex-row lg:space-x-3 lg:right-48">
-            <p className="px-5 py-1 rounded-full bg-gray-500/50 sm:px-2 sm:py-0.5 md:px-4 md:py-1 lg:px-5 lg:py-1">Empowere</p>
-            <p className="px-5 py-1 rounded-full bg-gray-500/50 sm:px-2 sm:py-0.5 md:px-4 md:py-1 lg:px-5 lg:py-1">Restore</p>
-            <p className="px-5 py-1 rounded-full bg-gray-500/50 sm:px-2 sm:py-0.5 md:px-4 md:py-1 lg:px-5 lg:py-1">Better</p>
+          <div className="text-white absolute top-5 right-48 flex space-x-3 sm:flex-col  sm:right-4 md:flex-row md:space-x-2 md:right-24 lg:flex-row lg:space-x-3 lg:right-36">
+            <p className="px-5 py-1 rounded-full bg-gray-500/50">Empowere</p>
+            <p className="px-5 py-1 rounded-full bg-gray-500/50">Restore</p>
+            <p className="px-5 py-1 rounded-full bg-gray-500/50">Better</p>
           </div>
         </div>
       </div>
