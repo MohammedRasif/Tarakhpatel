@@ -91,9 +91,7 @@ const StickyCard_001 = ({
           <p className="text-base sm:text-lg text-gray-300 mb-8">
             {description}
           </p>
-          <button className="self-start bg-gradient-to-r from-[#00953B] to-[#0068F0] text-white font-semibold  px-8 py-3 rounded-full border border-gray-400 ">
-            {buttonText}
-          </button>
+          
         </div>
       </motion.div>
     </div>
