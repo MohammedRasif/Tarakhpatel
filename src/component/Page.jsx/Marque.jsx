@@ -9,15 +9,19 @@ function Marque() {
         Works with the devices and labs you already use
       </p>
 
-      <Marquee>
-        <div className="flex space-x-40">
-          <h1 className="text-gray-400 text-5xl font-semibold">WATCH</h1>
-          <h1 className="text-gray-400 text-5xl font-semibold">OURA</h1>
-          <h1 className="text-gray-400 text-5xl font-semibold">Meta Quest</h1>
-          <h1 className="text-gray-400 text-5xl font-semibold">WHOOP</h1>
-          <h1 className="text-gray-400 text-5xl font-semibold">WHOOP</h1>
-        </div>
-      </Marquee>
+      <div className="">
+        <Marquee className="">
+          <div className="flex space-x-20 overflow-x-hidden ">
+            <h1 className="text-gray-400 text-[45px] font-semibold">WATCH</h1>
+            <h1 className="text-gray-400 text-[45px] font-semibold">OURA</h1>
+            <h1 className="text-gray-400 text-[45px] font-semibold">
+              Meta Quest
+            </h1>
+            <h1 className="text-gray-400 text-[45px] font-semibold">WHOOP</h1>
+            <h1 className="text-gray-400 text-[45px] font-semibold">WHOOP</h1>
+          </div>
+        </Marquee>
+      </div>
 
       <div className="relative">
         <div>

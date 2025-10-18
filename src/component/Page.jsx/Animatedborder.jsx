@@ -633,15 +633,15 @@ const Animatedborder = ({
             delay: 3000,
             disableOnInteraction: false,
           }}
-          pagination={{
-            clickable: true,
-          }}
+          // pagination={{
+          //   clickable: true,
+          // }}
           loop={true}
           className="w-full"
         >
           {cardData.map((card, index) => {
             const IconComponent = card.icon;
-            const baseClassName = `card flex flex-col  relative w-full min-h-[200px] sm:min-h-[200px] rounded-[20px]  font-light overflow-hidden transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:shadow-[0_8px_25px_#00A642] ${
+            const baseClassName = `card flex flex-col cursor-pointer  relative w-full min-h-[200px] sm:min-h-[200px] rounded-[20px]  font-light overflow-hidden transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:shadow-[0_8px_25px_#00A642] ${
               enableBorderGlow ? "card--border-glow" : ""
             } card-base`; // Applied the new base styles
             const cardStyle = {
@@ -685,7 +685,7 @@ const Animatedborder = ({
                         {card.description}
                       </p>
                       <p className="text-sm text-white py-5 flex items-center">
-                        Learn More <GoArrowRight size={18} className="ml-2" />
+                       
                       </p>
                     </div>
                   </ParticleCard>
@@ -817,7 +817,7 @@ const Animatedborder = ({
                       {card.description}
                     </p>
                     <p className="text-sm text-white py-5 flex items-center">
-                      Learn More <GoArrowRight size={18} className="ml-2" />
+                      
                     </p>
                   </div>
                 </div>
