@@ -655,7 +655,7 @@ const Animatedborder = ({
                       {card.description}
                     </p>
                     <p className="text-sm text-white py-5 flex items-center">
-                      Learn More <GoArrowRight size={18} className="ml-2" />
+                      
                     </p>
                   </div>
                 </ParticleCard>
