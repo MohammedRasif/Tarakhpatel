@@ -124,6 +124,7 @@ const ScrollStack = ({
         }
       }
 
+      
       let translateY = 0;
       const isPinned = scrollTop >= pinStart && scrollTop <= pinEnd;
 
@@ -140,6 +141,7 @@ const ScrollStack = ({
         blur: Math.round(blur * 100) / 100
       };
 
+      
       const lastTransform = lastTransformsRef.current.get(i);
       const hasChanged =
         !lastTransform ||

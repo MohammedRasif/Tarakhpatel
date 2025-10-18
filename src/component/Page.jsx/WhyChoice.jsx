@@ -17,42 +17,36 @@ const projects = [
     title: "Personalized Not Generic",
     description:
       "Tailored recommendations based on your unique health profile and goals.",
-    buttonText: "Learn More",
     src: img1,
   },
   {
     title: "Cutting-Edge Science",
     description:
       "Leveraging the latest research and advancements in health and longevity.",
-    buttonText: "Discover More",
     src: img2,
   },
   {
     title: "Holistic Approach",
     description:
       "Addressing all aspects of your well-being, from diet to mind-body connection.",
-    buttonText: "Explore Options",
     src: img3,
   },
   {
     title: "Expert Guidance",
     description:
       "Benefit from the wisdom and support of our experienced health professionals.",
-    buttonText: "Meet Our Team",
     src: img4,
   },
   {
     title: "Community & Support",
     description:
       "Join a vibrant community on a shared journey towards a healthier future.",
-    buttonText: "Join Now",
     src: img5,
   },
   {
     title: "Community & Support",
     description:
       "Join a vibrant community on a shared journey towards a healthier future.",
-    buttonText: "Join Now",
     src: img6,
   },
 ];
@@ -73,7 +67,7 @@ const StickyCard_001 = ({
   return (
     <div
       ref={container}
-      className="sticky top-0 flex items-center justify-center w-full mt-60 py-20 -mb-56"
+      className="sticky top-0 flex items-center justify-center w-full mt-60 py-20 -mb-56 "
     >
       <motion.div
         style={{
@@ -120,7 +114,7 @@ const Skiper16 = () => {
         className="relative flex w-full flex-col items-center justify-center pb-[100vh] pt-[10vh]"
       >
         {projects.map((project, i) => {
-          const targetScale = 1; // No scaling to ensure same size
+          const targetScale = 1; 
           return (
             <StickyCard_001
               key={`p_${i}`}

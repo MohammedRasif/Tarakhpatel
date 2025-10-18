@@ -4,7 +4,7 @@ import imgae from "../../image/Ellipse 374.png";
 
 function Longevity({ number, title, description }) {
   return (
-    <div className="py-32">
+    <div className="py-32 hidden md:block">
       <div className="container mx-auto py-10 pt-20 text-center pb-40">
         <h1 className="text-white text-[48px] font-medium leading-tight">
           Your Longevity Journey, Simplified.

@@ -1,6 +1,7 @@
 import Banner from "../Page.jsx/Banner";
 import Cadensa from "../Page.jsx/Cadensa";
 import Faq from "../Page.jsx/Faq";
+import FounderStory from "../Page.jsx/FounderStory";
 import Longevity from "../Page.jsx/Longevity";
 import Marque from "../Page.jsx/Marque";
 import SecondSection from "../Page.jsx/SecondSection";
@@ -17,6 +18,7 @@ const Home = () => {
       <WhyChoice></WhyChoice>
       <Trusted></Trusted>
       <Marque></Marque>
+      <FounderStory></FounderStory>
       <Faq></Faq>
     </div>
   );

@@ -107,7 +107,7 @@ function Banner() {
           </div>
 
           {/* Progress section */}
-          <div className="bg-white/30 backdrop-blur-md rounded-2xl p-6 shadow-lg h-[22vh] w-80 absolute bottom-5 lg:right-36 right-48 border border-white/20 sm:w-48 sm:h-[15vh] md:w-64 md:h-[18vh] lg:w-80 lg:h-[22vh]">
+          <div className="bg-white/30 backdrop-blur-md rounded-2xl p-6 shadow-lg h-[22vh] w-80 absolute bottom-5  right-48 border border-white/20 sm:w-48 sm:h-[15vh] md:w-64 md:h-[18vh] lg:w-80 lg:h-[22vh]">
             {/* Header with icon and title */}
             <div className="flex items-center gap-4 mb-6 sm:gap-2 md:gap-3 lg:gap-4">
               <div className="relative w-12 h-12 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12">
