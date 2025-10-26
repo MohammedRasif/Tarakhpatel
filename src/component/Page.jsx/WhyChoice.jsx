@@ -44,9 +44,9 @@ const projects = [
     src: img5,
   },
   {
-    title: "Community & Support",
+    title: "Simple & Accessible",
     description:
-      "Join a vibrant community on a shared journey towards a healthier future.",
+      "Complex health insights made simple and actionable for everyone.",
     src: img6,
   },
 ];

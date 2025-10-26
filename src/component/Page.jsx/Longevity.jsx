@@ -33,7 +33,7 @@ function Longevity({ number, title, description }) {
                 <img
                   src={imgae}
                   alt=""
-                  className="h-32 -mt-10 -ml-14 object-cover"
+                  className="h-32 -mt-12 -ml-14 object-cover"
                 />
               </div>
             </div>
@@ -68,7 +68,7 @@ function Longevity({ number, title, description }) {
                 <img
                   src={imgae}
                   alt=""
-                  className="h-32 -mt-10 -ml-14 object-cover"
+                  className="h-32 -mt-12 -ml-14 object-cover"
                 />
               </div>
             </div>
@@ -103,7 +103,7 @@ function Longevity({ number, title, description }) {
                 <img
                   src={imgae}
                   alt=""
-                  className="h-32 -mt-10 -ml-14 object-cover"
+                  className="h-32 -mt-12 -ml-14 object-cover"
                 />
               </div>
             </div>

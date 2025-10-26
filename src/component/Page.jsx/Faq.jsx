@@ -7,14 +7,14 @@ function Faq() {
 
   const faqData = [
     {
-      question: "Is Cadmina a medical product?",
+      question: "Is Cadensa a medical product?",
       answer:
-        "Cadmina is not a medical device or diagnostic tool. It's a wellness platform designed to provide insights and recommendations based on your health data. Always consult with healthcare professionals for medical advice.",
+        "Cadensa is not a medical device or diagnostic tool. It's a wellness platform designed to provide insights and recommendations based on your health data. Always consult with healthcare professionals for medical advice.",
     },
     {
-      question: "Who is Cadmina for?",
+      question: "Who is Cadensa for?",
       answer:
-        "Cadmina is designed for health-conscious individuals who want to take a proactive approach to their wellness. Whether you're looking to optimize your fitness, nutrition, or overall well-being, our platform provides personalized insights.",
+        "Cadensa is designed for health-conscious individuals who want to take a proactive approach to their wellness. Whether you're looking to optimize your fitness, nutrition, or overall well-being, our platform provides personalized insights.",
     },
     {
       question: "How do you protect my data?",
@@ -22,9 +22,9 @@ function Faq() {
         "We take data privacy seriously. All your personal health information is encrypted and stored securely. We never share your data with third parties without your explicit consent, and you have full control over your information.",
     },
     {
-      question: "When will Cadmina be available?",
+      question: "When will Cadensa be available?",
       answer:
-        "Cadmina is currently in development. We're working hard to bring you the best possible experience. Join our waitlist to be among the first to know when we launch and get early access to the platform.",
+        "Cadensa is currently in development. We're working hard to bring you the best possible experience. Join our waitlist to be among the first to know when we launch and get early access to the platform.",
     },
   ]
 
@@ -37,10 +37,10 @@ function Faq() {
       <div className="bg-gradient-to-r from-[#00953B] to-[#0068F0] container mx-auto flex justify-center items-center min-h-[35vh] rounded-3xl z-10">
         <div className="py-8 sm:py-10 text-center w-full max-w-xl px-4">
           <h1 className="text-white text-3xl sm:text-4xl md:text-5xl font-medium leading-tight">
-            Your Longevity Journey Starts Here.
+           Health, Orchestrated
           </h1>
           <p className="text-base sm:text-lg text-gray-300 pt-5">
-            Join thousands of professionals using TerraIntel 360 for smarter, data-driven insights
+            Join thousands of professionals using Cadensa for smarter, data driven insights.
           </p>
           <button className="bg-white text-[18px] px-10 py-3 font-semibold rounded-full mt-4">
             👉 Join the Waitlist

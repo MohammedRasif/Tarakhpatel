@@ -44,22 +44,22 @@ function Banner() {
           </p>
 
           <h1 className="text-white text-[30px] font-medium leading-tight sm:text-[40px] md:text-[60px] lg:text-[75px]">
-            The World's First{" "}
+            Worlds Most Personalized {" "}
             <span className="bg-clip-text text-transparent bg-gradient-to-b from-[#00953B] to-[#0068F0] font-[550]">
               Longevity
             </span>
             <br />
             <span className="bg-clip-text text-transparent bg-gradient-to-b from-[#00953B] to-[#0068F0] font-[550]">
-              Operating System
+              Ecosystem
             </span>
           </h1>
           <p className="text-gray-400 text-[14px] pt-5 sm:text-[14px] md:text-[16px] lg:text-[20px]">
             Unify your health data wearables, labs, lifestyle, and medical
             records into adaptive, personalized health span plans.
           </p>
-          <p className="text-gray-400 text-[14px] pt-5 sm:text-[12px] md:text-[14px] lg:text-[16px]">
+          {/* <p className="text-gray-400 text-[14px] pt-5 sm:text-[12px] md:text-[14px] lg:text-[16px]">
             Add years to your life by adding life to your years.
-          </p>
+          </p> */}
           <div className="text-gray-300 lg:text-[16px] text-[13px] space-x-6 mt-6 flex flex-wrap sm:space-x-2 md:space-x-4 lg:space-x-6">
             <button className="rounded-full px-8 py-3 text-white lg:mb-0 mb-5 font-semibold bg-gradient-to-r from-[#00953B] to-[#0068F0] cursor-pointer group sm:px-4 sm:py-2 md:px-6 md:py-2 lg:px-8 lg:py-3">
               <span className="inline-block transition-transform duration-200 group-hover:scale-105">
@@ -72,28 +72,7 @@ function Banner() {
               </span>
             </button>
           </div>
-          <div className="text-white flex items-center py-2 px-4 pt-10 sm:flex-col sm:items-start sm:space-y-2 lg:flex-row lg:space-x-4">
-            <div className="flex -space-x-2 sm:-space-x-1 md:-space-x-2">
-              <img
-                src="https://res.cloudinary.com/dfsu0cuvb/image/upload/v1737529178/samples/man-portrait.jpg"
-                className="w-10 h-10 rounded-full border-2 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-10 lg:h-10"
-                alt="Customer 1"
-              />
-              <img
-                src="https://res.cloudinary.com/dfsu0cuvb/image/upload/v1737529177/samples/smile.jpg"
-                className="w-10 h-10 rounded-full border-2 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-10 lg:h-10"
-                alt="Customer 2"
-              />
-              <img
-                src="https://res.cloudinary.com/dfsu0cuvb/image/upload/v1737529169/samples/people/smiling-man.jpg"
-                className="w-10 h-10 rounded-full border-2 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-10 lg:h-10"
-                alt="Customer 3"
-              />
-            </div>
-            <div className="ml-4 text-sm font-medium sm:ml-0 sm:mt-2 lg:ml-4 lg:text-sm md:text-xs sm:text-[10px]">
-              Already helped <br /> over 10K+ customer
-            </div>
-          </div>
+          
         </div>
 
         {/* Right side section */}

@@ -20,13 +20,13 @@ function Trusted() {
             <div className=" items-start gap-4 relative">
               <div className="items-center justify-start flex space-x-3 pb-2">
                 <img
-                  src="https://res.cloudinary.com/dfsu0cuvb/image/upload/v1737529179/cld-sample.jpg"
+                  src="https://res.cloudinary.com/dfsu0cuvb/image/upload/v1761393429/Image_27_tzr9vq.png"
                   className="rounded-full w-10 h-10"
                   alt=""
                 />
                 <div>
                   <h3 className="text-white font-semibold text-[17px]">
-                    Dr. Sam Chen, MD
+                    Dr. Tarak Patel
                   </h3>
                   <p className="text-gray-400 text-[14px]">
                     Founder & Chief Medical Officer
@@ -41,10 +41,10 @@ function Trusted() {
                 </p>
               </div>
             </div>
-            <div className="absolute text-white flex items-center font-semibold right-0 rounded-tr-lg px-3 py-1 rounded-bl-lg bg-gradient-to-r from-[#00953B] to-[#0068F0] top-0">
+            {/* <div className="absolute text-white flex items-center font-semibold right-0 rounded-tr-lg px-3 py-1 rounded-bl-lg bg-gradient-to-r from-[#00953B] to-[#0068F0] top-0">
               <FaStar />
               1.0
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -58,8 +58,7 @@ function Trusted() {
               </h3>
             </div>
             <p className="text-gray-300 text-sm leading-relaxed">
-              Development input from leading physicians and biomarker
-              institutions.
+             Developed with input from longevity researchers, health-tech innovators, and physicians from leading institutions.
             </p>
           </div>
 
@@ -69,8 +68,7 @@ function Trusted() {
               Research Partnerships
             </h3>
             <p className="text-gray-300 text-sm leading-relaxed">
-              Collaborating with leading research institutions to enhance
-              patient outcomes for longevity medicine.
+              Collaborating with leading longevity research institutions to ensure our platform reflects the latest scientific breakthroughs.
             </p>
           </div>
         </div>

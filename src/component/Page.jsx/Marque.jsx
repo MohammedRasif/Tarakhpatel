@@ -37,9 +37,9 @@ function Marque() {
             with adaptive insights, we help you unlock your full potential for a
             longer, better life.
           </p>
-          <p className="text-white">
+          {/* <p className="text-white">
             "Add years to your life by adding life to your years."
-          </p>
+          </p> */}
         </div>
       </div>
     </div>
