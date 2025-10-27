@@ -6,7 +6,7 @@ const Footer = () => {
         <hr  className="text-gray-600"/>
       <footer className="container mx-auto bg-black text-white py-4 flex justify-between items-center px-6">
         <div>
-          <h1 className="text-lg">Cadmina - Health Orchestrated</h1>
+          <h1 className="text-lg">Cadensa - Health Orchestrated</h1>
         </div>
         <div className="flex space-x-4">
           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">

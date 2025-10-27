@@ -2,9 +2,12 @@ import React, { useEffect, useState } from "react";
 import DotGrid from "../Home/DotGrid";
 import images from "../../image/Image.png";
 import { LuHeartHandshake } from "react-icons/lu";
+import video from "../../image/cadensa video.mp4";
 
 function Banner() {
   const [progress, setProgress] = useState(0);
+  const [isModalOpen, setIsModalOpen] = useState(false); // State for modal visibility
+  const [showImage, setShowImage] = useState(false); // State to toggle between video and image
   const currentIntake = 1500;
   const totalGoal = 2000;
   const progressPercentage = (currentIntake / totalGoal) * 100;
@@ -17,6 +20,23 @@ function Banner() {
 
     return () => clearTimeout(timer);
   }, [progressPercentage]);
+
+  // Function to open the modal and reset to video
+  const openModal = () => {
+    setIsModalOpen(true);
+    setShowImage(false); // Ensure video is shown when modal opens
+  };
+
+  // Function to close the modal
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setShowImage(false); // Reset to video when modal closes
+  };
+
+  // Function to handle video end
+  const handleVideoEnd = () => {
+    setShowImage(true); // Show image when video ends
+  };
 
   return (
     <div className="bg-black h-screen relative">
@@ -38,13 +58,13 @@ function Banner() {
       <div className="flex flex-col lg:flex-row items-center justify-between container mx-auto h-full relative Archivo px-4 py-6 lg:pt-10 pt-28">
         {/* Left side section */}
         <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
-          <p className="text-gray-300 bg-black lg:text-[14px] text-[11px] flex items-center border border-gray-700 rounded-full px-4 py-1 w-fit mb-4 sm:text-[12px] md:text-[14px]">
+          {/* <p className="text-gray-300 bg-black lg:text-[14px] text-[11px] flex items-center border border-gray-700 rounded-full px-4 py-1 w-fit mb-4 sm:text-[12px] md:text-[14px]">
             <LuHeartHandshake className="text-blue-600 mr-2" size={18} />
             Care You Can Trust
-          </p>
+          </p> */}
 
           <h1 className="text-white text-[30px] font-medium leading-tight sm:text-[40px] md:text-[60px] lg:text-[75px]">
-            Worlds Most Personalized {" "}
+            Worlds Most Personalized{" "}
             <span className="bg-clip-text text-transparent bg-gradient-to-b from-[#00953B] to-[#0068F0] font-[550]">
               Longevity
             </span>
@@ -57,22 +77,21 @@ function Banner() {
             Unify your health data wearables, labs, lifestyle, and medical
             records into adaptive, personalized health span plans.
           </p>
-          {/* <p className="text-gray-400 text-[14px] pt-5 sm:text-[12px] md:text-[14px] lg:text-[16px]">
-            Add years to your life by adding life to your years.
-          </p> */}
           <div className="text-gray-300 lg:text-[16px] text-[13px] space-x-6 mt-6 flex flex-wrap sm:space-x-2 md:space-x-4 lg:space-x-6">
             <button className="rounded-full px-8 py-3 text-white lg:mb-0 mb-5 font-semibold bg-gradient-to-r from-[#00953B] to-[#0068F0] cursor-pointer group sm:px-4 sm:py-2 md:px-6 md:py-2 lg:px-8 lg:py-3">
               <span className="inline-block transition-transform duration-200 group-hover:scale-105">
                 👉 Join the Waitlist
               </span>
             </button>
-            <button className="border border-gray-500 rounded-full px-8 py-3 font-semibold cursor-pointer group bg-black sm:px-4 sm:py-2 md:px-6 md:py-2 lg:px-8 lg:py-3">
+            <button
+              onClick={openModal} // Open modal on click
+              className="border border-gray-500 rounded-full px-8 py-3 font-semibold cursor-pointer group bg-black sm:px-4 sm:py-2 md:px-6 md:py-2 lg:px-8 lg:py-3"
+            >
               <span className="inline-block transition-transform duration-200 group-hover:scale-105">
                 Learn how Cadensa works →
               </span>
             </button>
           </div>
-          
         </div>
 
         {/* Right side section */}
@@ -86,11 +105,9 @@ function Banner() {
           </div>
 
           {/* Progress section */}
-          <div className="bg-white/30 backdrop-blur-md rounded-2xl p-6 shadow-lg h-[22vh] w-80 absolute bottom-5  right-48 border border-white/20 sm:w-48 sm:h-[15vh] md:w-64 md:h-[18vh] lg:w-80 lg:h-[22vh]">
-            {/* Header with icon and title */}
+          <div className="bg-white/30 backdrop-blur-md rounded-2xl p-6 shadow-lg h-[22vh] w-80 absolute bottom-5 right-48 border border-white/20 sm:w-48 sm:h-[15vh] md:w-64 md:h-[18vh] lg:w-80 lg:h-[22vh]">
             <div className="flex items-center gap-4 mb-6 sm:gap-2 md:gap-3 lg:gap-4">
               <div className="relative w-12 h-12 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12">
-                {/* Circular background with gradient */}
                 <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-400 to-teal-500 flex items-center justify-center sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12">
                   <svg
                     className="w-6 h-6 text-white sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-6 lg:h-6"
@@ -101,7 +118,6 @@ function Banner() {
                   </svg>
                 </div>
               </div>
-
               <div>
                 <h2 className="text-lg font-semibold text-gray-900 sm:text-sm md:text-base lg:text-lg">
                   Daily Water Intake
@@ -111,10 +127,7 @@ function Banner() {
                 </p>
               </div>
             </div>
-
-            {/* Progress section */}
             <div className="space-y-4">
-              {/* Progress text */}
               <div className="flex items-center justify-between text-lg sm:text-sm md:text-base lg:text-lg">
                 <span className="font-semibold text-gray-900">
                   {currentIntake.toLocaleString()} ml
@@ -123,8 +136,6 @@ function Banner() {
                   of {totalGoal.toLocaleString()} ml
                 </span>
               </div>
-
-              {/* Progress bar alternative (linear) */}
               <div className="w-full bg-white/10 backdrop-blur-md rounded-full h-11 sm:h-7 md:h-9 lg:h-11">
                 <div
                   className="bg-gradient-to-r from-blue-400 to-teal-500 h-11 rounded-full transition-all duration-1000 ease-out"
@@ -133,13 +144,60 @@ function Banner() {
               </div>
             </div>
           </div>
-          <div className="text-white absolute top-5 right-48 flex space-x-3 sm:flex-col  sm:right-4 md:flex-row md:space-x-2 md:right-24 lg:flex-row lg:space-x-3 lg:right-36">
+          <div className="text-white absolute top-5 right-48 flex space-x-3 sm:flex-col sm:right-4 md:flex-row md:space-x-2 md:right-24 lg:flex-row lg:space-x-3 lg:right-36">
             <p className="px-5 py-1 rounded-full bg-gray-500/50">Empowere</p>
             <p className="px-5 py-1 rounded-full bg-gray-500/50">Restore</p>
             <p className="px-5 py-1 rounded-full bg-gray-500/50">Better</p>
           </div>
         </div>
       </div>
+
+      {/* Modal for video/image */}
+      {isModalOpen && (
+        <div className="fixed inset-0 bg-black/50 backdrop-blur-[3px] flex items-center justify-center z-50">
+          <div className="bg-white rounded-2xl p-6 w-full max-w-2xl relative">
+            {/* Close button */}
+            <button
+              onClick={closeModal}
+              className="absolute top-4 right-4 text-gray-600 hover:text-gray-900"
+            >
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+
+            {/* Video or Image Content */}
+            <div className="flex justify-center items-center">
+              {!showImage ? (
+                <video
+                  src={video}
+                  autoPlay
+                  controls
+                  onEnded={handleVideoEnd}
+                  className="w-full h-auto rounded-lg"
+                />
+              ) : (
+                <img
+                  src="https://res.cloudinary.com/dfsu0cuvb/image/upload/v1761477944/Cadensa_kxkivc.jpg"
+                  alt="Post-video image"
+                  className="w-full h-auto rounded-lg"
+                />
+              )}
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

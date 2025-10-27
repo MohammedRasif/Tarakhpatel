@@ -22,7 +22,7 @@ const projects = [
   {
     title: "Cutting-Edge Science",
     description:
-      "Leveraging the latest research and advancements in health and longevity.",
+      "Leveraging the latest research and advancements into health and longevity.",
     src: img2,
   },
   {

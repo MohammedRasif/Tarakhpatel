@@ -22,7 +22,7 @@ const cardData = [
   {
     icon: FiWifi,
     title: "Integrate Everything",
-    description: "Wearables, labs, lifestyle, and medical records place.",
+    description: "Wearables, labs, lifestyle, and medical records in one place.",
   },
   {
     icon: FaStethoscope,
