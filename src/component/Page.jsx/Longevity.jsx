@@ -1,4 +1,3 @@
-import React from "react";
 import AnimatedCurveLine from "./AnimatedCursorline";
 import imgae from "../../image/Ellipse 374.png";
 

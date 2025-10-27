@@ -22,7 +22,8 @@ const cardData = [
   {
     icon: FiWifi,
     title: "Integrate Everything",
-    description: "Wearables, labs, lifestyle, and medical records in one place.",
+    description:
+      "Wearables, labs, lifestyle, and medical records in one place.",
   },
   {
     icon: FaStethoscope,
@@ -139,7 +140,7 @@ const ParticleCard = ({
       const timeoutId = setTimeout(() => {
         if (!isHoveredRef.current || !cardRef.current) return;
         const clone = particle.cloneNode(true);
-        
+
         cardRef.current.appendChild(clone);
         particlesRef.current.push(clone);
         gsap.fromTo(
@@ -557,12 +558,15 @@ const Animatedborder = ({
 
           }
           
-          .card-base {
-            background-color: rgba(255, 255, 255, 0.08); /* Frosted glass base */
-            backdrop-filter: blur(15px); /* Frosted glass blur */
-            border-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white border */
-            position: relative;
-          }
+              .card-base {
+                background-color: rgba(255, 255, 255, 0.08); /* Frosted glass base */
+                backdrop-filter: blur(15px); /* Frosted glass blur */
+                border-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white border */
+                position: relative;
+                height: 200px; /* Add this line to set a fixed height */
+                display: flex; /* Ensure content is aligned properly */
+                flex-direction: column; /* Align content vertically */
+              }
 
           .card-base::before {
             content: '';
@@ -684,9 +688,7 @@ const Animatedborder = ({
                       >
                         {card.description}
                       </p>
-                      <p className="text-sm text-white py-5 flex items-center">
-                       
-                      </p>
+                      <p className="text-sm text-white py-5 flex items-center"></p>
                     </div>
                   </ParticleCard>
                 </SwiperSlide>
@@ -816,9 +818,7 @@ const Animatedborder = ({
                     >
                       {card.description}
                     </p>
-                    <p className="text-sm text-white py-5 flex items-center">
-                      
-                    </p>
+                    <p className="text-sm text-white py-5 flex items-center"></p>
                   </div>
                 </div>
               </SwiperSlide>
