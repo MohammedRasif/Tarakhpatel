@@ -9,9 +9,12 @@ import Roots from './Root/Roots.jsx';
 import Home from './component/Home/Home.jsx';
 import UserDashboardLayout from './component/UserDashboard/UserDashboardLayout/UserDashboardLayout.jsx';
 import Dashboard from './component/UserDashboard/UserDashboardPages/Dashboard.jsx';
+import WarningPage from './component/Page.jsx/Worning.jsx';
 
 const router = createBrowserRouter([
   {
+    // path: "/",
+    // element:<WarningPage/> ,
     path: "/",
     element:<Roots/> ,
     children: [

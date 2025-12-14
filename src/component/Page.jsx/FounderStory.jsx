@@ -96,7 +96,7 @@ function FounderStory() {
         <div className="lg:w-1/2 ">
           <img src={img3} className="" alt="" />
         </div>
-        <div className="lg:w-1/2 lg:pl-20">
+        <div className="lg:w-1/2 ">
           <h1 className="lg:text-[32px] text-[20px] font-medium lg:pt-0 pt-5">
             Solution
           </h1>

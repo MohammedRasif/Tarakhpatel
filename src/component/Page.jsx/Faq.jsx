@@ -35,23 +35,24 @@ function Faq() {
   return (
     <div className="pb-10">
       <div className="bg-gradient-to-r from-[#00953B] to-[#0068F0] container mx-auto flex justify-center items-center min-h-[35vh] rounded-3xl z-10">
-        <div className="py-8 sm:py-10 text-center w-full max-w-xl px-4">
-          <h1 className="text-white text-3xl sm:text-4xl md:text-5xl font-medium leading-tight">
-           Health, Orchestrated
-          </h1>
-          <p className="text-base sm:text-lg text-gray-300 pt-5">
-            Join thousands of professionals using Cadensa for smarter, data driven insights.
-          </p>
-          <button className="bg-white text-[18px] px-10 py-3 font-semibold rounded-full mt-4">
-            👉 Join the Waitlist
-          </button>
+        <div className="bg-gradient-to-r from-[#00953B] to-[#0068F0] container mx-auto flex justify-center items-center min-h-[35vh] rounded-3xl z-10">
+          <div className="py-8 sm:py-10 text-center w-full max-w-2xl px-4">
+            <h1 className="text-white  text-3xl sm:text-4xl md:text-5xl font-medium leading-tight">
+              January Founding Cohort
+            </h1>
+            <p className="text-base sm:text-lg text-gray-300 py-4">
+              A small group of early users helping shape the future of longevity technology.
+            </p>
+            <button className="bg-white text-[18px] px-10 py-3 font-semibold rounded-full mt-4 hover:scale-105 transition-transform">
+              Reserve Your Spot →
+            </button>
+          </div>
         </div>
       </div>
 
       {/* FAQ Section */}
-      <div className="container mx-auto px-4 py-16">
+      {/* <div className="container mx-auto px-4 py-16">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-16">
-          {/* Left side - Title */}
           <div className="lg:w-1/3">
             <h2 className="text-white text-3xl lg:text-5xl font-medium leading-tight">
               Frequently
@@ -64,7 +65,6 @@ function Faq() {
             </button> 
           </div>
 
-          {/* Right side - FAQ Items */}
           <div className="lg:w-2/3 space-y-4">
             {faqData.map((faq, index) => (
               <div
@@ -103,7 +103,7 @@ function Faq() {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }
