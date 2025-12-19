@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { toast, ToastContainer } from 'react-toastify';
 
-const API_URL = 'https://63b3db09a57f.ngrok-free.app/api/waiting-list/';
+const API_URL = 'https://cadensa.duckdns.org:8080/api/waiting-list/';
 
 function JoinUs() {
   const [name, setName] = useState('');
@@ -112,7 +112,7 @@ function JoinUs() {
         </form>
 
         <p className="text-center text-sm text-gray-500 mt-8">
-          By joining you agree to receive updates about Akane.
+          By joining you agree to receive updates about Cadensa.
         </p>
       </div>
       <ToastContainer position="top-right" autoClose={5000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover />

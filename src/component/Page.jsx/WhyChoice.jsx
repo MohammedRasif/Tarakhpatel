@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import ReactLenis from "lenis/react";
 import { useRef } from "react";
@@ -63,7 +63,9 @@ const StickyCard_001 = ({
 }) => {
   const container = useRef(null);
   const scale = useTransform(progress, range, [1, targetScale]);
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div
       ref={container}
@@ -91,7 +93,6 @@ const StickyCard_001 = ({
           <p className="text-base sm:text-lg text-gray-300 mb-8">
             {description}
           </p>
-          
         </div>
       </motion.div>
     </div>
@@ -109,10 +110,10 @@ const Skiper16 = () => {
     <ReactLenis root>
       <main
         ref={container}
-        className="relative flex w-full flex-col items-center justify-center pb-[100vh] pt-[10vh]"
+        className="relative flex w-full flex-col items-center justify-center pb-[100vh] pt-[10vh] bg-black"
       >
         {projects.map((project, i) => {
-          const targetScale = 1; 
+          const targetScale = 1;
           return (
             <StickyCard_001
               key={`p_${i}`}
@@ -132,7 +133,7 @@ const Skiper16 = () => {
 function WhyChoice() {
   return (
     <div className="">
-      <div className="w-full flex justify-center items-center">
+      <div className="w-full flex justify-center items-center pt-28 relative z-20">
         <div className="py-8 sm:py-10 w-full max-w-xl px-4 flex flex-col justify-center items-center text-center">
           <h1 className="text-white text-3xl sm:text-4xl md:text-5xl font-medium leading-tight">
             Why Choose Cadensa?
@@ -143,6 +144,7 @@ function WhyChoice() {
           </p>
         </div>
       </div>
+
       <div className="-my-96">
         <Skiper16 />
       </div>

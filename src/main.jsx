@@ -10,6 +10,9 @@ import Home from './component/Home/Home.jsx';
 import UserDashboardLayout from './component/UserDashboard/UserDashboardLayout/UserDashboardLayout.jsx';
 import Dashboard from './component/UserDashboard/UserDashboardPages/Dashboard.jsx';
 import WarningPage from './component/Page.jsx/Worning.jsx';
+import WhyChoice from './component/Page.jsx/WhyChoice.jsx';
+import FounderStory from './component/Page.jsx/FounderStory.jsx';
+import Trusted from './component/Page.jsx/Trusted.jsx';
 
 const router = createBrowserRouter([
   {
@@ -22,6 +25,18 @@ const router = createBrowserRouter([
         path: "/",
         element:<Home/> ,
       },
+      {
+        path:"/why_choose_Cadensa",
+        element:<WhyChoice/>,
+      },
+      {
+        path:"/vision",
+        element:<FounderStory/>,
+      },
+      {
+        path:"/about_us",
+        element:<Trusted/>,
+      }
     ],
   },
 
