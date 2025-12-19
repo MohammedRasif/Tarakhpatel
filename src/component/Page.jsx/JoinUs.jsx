@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { toast, ToastContainer } from 'react-toastify';
 
-const API_URL = 'https://cadensa.duckdns.org:8080/api/waiting-list/';
+const API_URL = 'https://backend.cadensa.ai/api/waiting-list/';
 
 function JoinUs() {
   const [name, setName] = useState('');
