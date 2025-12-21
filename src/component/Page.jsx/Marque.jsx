@@ -34,7 +34,7 @@ function Marque() {
             Health, Orchestrated. Longevity, Unlocked.
           </h1>
           <p className="text-gray-300 max-w-4xl py-5">
-            Cadensa is more than an app—it's the world's first Longevity
+            Cadensa is more than an app—it's the world's most personalized Longevity
             Operating System. By integrating your health data and guiding you
             with adaptive insights, we help you unlock your full potential for a
             longer, better life.
