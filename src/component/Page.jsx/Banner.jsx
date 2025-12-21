@@ -50,8 +50,7 @@ function Banner() {
             </span>
           </h1>
           <p className="text-gray-400 text-[14px] pt-4 sm:text-[16px] md:text-[18px] lg:text-[20px]">
-            Unify your health data wearables, labs, lifestyle, and medical records into adaptive, personalized health
-            span plans.
+            Unify your health data across devices, labs, lifestyle and support turning it into adaptive personalized healthspan plans.
           </p>
           {/* <div className="text-gray-300 mt-6 flex flex-wrap gap-3">
             <button className="rounded-full w-full sm:w-auto px-8 py-3 text-white font-semibold bg-gradient-to-r from-[#00953B] to-[#0068F0] cursor-pointer group text-[14px] lg:text-[16px]">
