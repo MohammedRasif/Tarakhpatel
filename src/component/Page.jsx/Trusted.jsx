@@ -35,7 +35,7 @@ function Trusted() {
               </div>
               <div>
                 <p className="text-gray-300 mt-2 leading-relaxed text-sm sm:text-base">
-                  Board-certified specialist with 15+ years of clinical and biomarker experience. Passionate about using
+                  Board-certified specialist with 15+ years of clinical and research experience. Passionate about using
                   technology to democratize longevity medicine.
                 </p>
               </div>

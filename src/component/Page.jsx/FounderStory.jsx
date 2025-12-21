@@ -44,9 +44,9 @@ function FounderStory() {
             </h1>
             <p className="text-base sm:text-lg text-[#B4B4B6] mb-4 sm:mb-5">
               Our mission is to empower people with early, personalized insights
-              and adaptive tools that prevent disease, optimize healthspan, and
+              and adaptive tools that optimize healthspan and
               align their entire care ecosystem around a smarter path to
-              long-term wellbeing.
+              long term wellbeing.
             </p>
           </div>
         </div>
