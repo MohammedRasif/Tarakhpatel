@@ -67,11 +67,11 @@ function FristBanner() {
               Launching January 2026.
             </p>
             <div className="text-gray-300 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mt-6 sm:mt-8 w-full sm:w-auto">
-              <button className="rounded-full w-full sm:w-auto px-8 py-3 sm:px-10 sm:py-4 text-white font-semibold bg-gradient-to-r from-[#00953B] to-[#0068F0] cursor-pointer group text-[14px] sm:text-[16px] lg:text-[18px]">
+              {/* <button className="rounded-full w-full sm:w-auto px-8 py-3 sm:px-10 sm:py-4 text-white font-semibold bg-gradient-to-r from-[#00953B] to-[#0068F0] cursor-pointer group text-[14px] sm:text-[16px] lg:text-[18px]">
                 <span className="inline-block transition-transform duration-200 group-hover:scale-105">
                   Join the January Founding Cohort →
                 </span>
-              </button>
+              </button> */}
               <button
                 onClick={openModal}
                 className="border border-gray-500 rounded-full w-full sm:w-auto px-8 py-3 sm:px-10 sm:py-4 font-semibold cursor-pointer group bg-black text-[14px] sm:text-[16px] lg:text-[18px]"
