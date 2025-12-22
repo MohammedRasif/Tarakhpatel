@@ -17,7 +17,7 @@ function JoinUs() {
       return;
     }
 
-    setIsLoading(true); // Start loading
+    setIsLoading(true); 
 
     const postData = {
       name: name,
