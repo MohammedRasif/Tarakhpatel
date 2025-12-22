@@ -1,7 +1,7 @@
 import { div } from "framer-motion/client";
 import img1 from "../../image/Frame 1707483045.png";
-import img2 from "../../image/Image (28).png";
-import img3 from "../../image/Image (29).png";
+import img2 from "../../image/image (28).png";
+import img3 from "../../image/image (29).png";
 import { useEffect } from "react";
 
 function FounderStory() {
