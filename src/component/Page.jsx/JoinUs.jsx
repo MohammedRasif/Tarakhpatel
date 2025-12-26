@@ -8,19 +8,7 @@ function JoinUs() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [isLoading, setIsLoading] = useState(false); 
-  useEffect(() => {
-  const section = document.getElementById("pricing");
-  if (section) {
-    const offset = 80; // navbar height
-    const sectionPosition =
-      section.getBoundingClientRect().top + window.scrollY;
 
-    window.scrollTo({
-      top: sectionPosition - offset,
-      behavior: "smooth",
-    });
-  }
-}, []);
 
 
   const handleSubmit = async (event) => {
