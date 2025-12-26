@@ -41,11 +41,11 @@ const cardData = [
     title: "Longevity Focused             ",
     description: "Built to maximize vitality, not just track numbers.",
   },
-  {
-    icon: GiMicroscope,
-    title: "Longevity Focused             ",
-    description: "Built to maximize vitality, not just track numbers.",
-  },
+  // {
+  //   icon: GiMicroscope,
+  //   title: "Longevity Focused             ",
+  //   description: "Built to maximize vitality, not just track numbers.",
+  // },
 ];
 
 const createParticleElement = (x, y, color = DEFAULT_GLOW_COLOR) => {

@@ -44,7 +44,7 @@ function Faq() {
               A small group of early users helping shape the future of longevity technology.
             </p>
             <button className="bg-white text-[18px] px-10 py-3 font-semibold rounded-full mt-4 hover:scale-105 transition-transform">
-              Reserve Your Spot below →
+              Reserve Your Spot below 
             </button>
           </div>
         </div>

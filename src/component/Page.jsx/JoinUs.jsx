@@ -1,13 +1,27 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { toast, ToastContainer } from 'react-toastify';
 
-const API_URL = 'https://backend.cadensa.ai/api/waiting-list/';
+const API_URL = 'https://cadensa.ai/api/waiting-list/';
 
 function JoinUs() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [isLoading, setIsLoading] = useState(false); 
+  useEffect(() => {
+  const section = document.getElementById("pricing");
+  if (section) {
+    const offset = 80; // navbar height
+    const sectionPosition =
+      section.getBoundingClientRect().top + window.scrollY;
+
+    window.scrollTo({
+      top: sectionPosition - offset,
+      behavior: "smooth",
+    });
+  }
+}, []);
+
 
   const handleSubmit = async (event) => {
     event.preventDefault(); 
@@ -55,7 +69,7 @@ function JoinUs() {
   };
 
   return (
-    <div className=" bg-black flex flex-col items-center justify-center px-6 pb-12">
+    <div id="pricing" className=" bg-black flex flex-col items-center justify-center px-6 pb-12">
       <div className="w-full max-w-2xl">
         {/* Heading */}
         <h1 className="text-4xl md:text-5xl font-medium tracking-tight text-white text-center mb-3">
