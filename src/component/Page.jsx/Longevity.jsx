@@ -37,7 +37,6 @@ function Longevity({ number, title, description }) {
               </div>
             </div>
 
-            {/* Card Content */}
             <div className="relative z-20 text-left">
               <h2 className="text-white text-4xl font-semibold mb-4">
                 Connect
