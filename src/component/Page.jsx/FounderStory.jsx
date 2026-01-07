@@ -13,7 +13,7 @@ function FounderStory() {
       <div className="text-white container mx-auto px-4 py-10 sm:py-16 ">
         <div className="lg:flex items-center justify-between pt-24">
           <h1 className="lg:w-1/2  text-3xl sm:text-4xl md:text-5xl font-medium leading-tight mb-6 sm:mb-8 pt-14">
-            Healing Today, <br /> Shaping Tomorrow
+            Building Clarity into <br /> Modern Health.
           </h1>
           <p className=" lg:w-1/2 text-base sm:text-lg text-[#B4B4B6] mb-4 sm:mb-5">
             We’re committed to improving lives in the present while building a
@@ -35,18 +35,21 @@ function FounderStory() {
               Vision
             </h1>
             <p className="text-base sm:text-lg text-[#B4B4B6] mb-4 sm:mb-5">
-              To redefine how the world approaches aging - from reactive care to
-              proactive, personalized longevity - by building the most
-              intelligent, integrated ecosystem for lifelong health.
+              A future where people clearly understand their health and feel
+              supported as they act on it. We envision a world where health is
+              no longer fragmented, confusing, or navigated alone. Cadensa
+              exists to help people age well with direction, not guesswork.
             </p>
             <h1 className="lg:text-[32px] text-[20px] font-medium lg:pt-0 pt-5">
               Mission
             </h1>
             <p className="text-base sm:text-lg text-[#B4B4B6] mb-4 sm:mb-5">
-              Our mission is to empower people with early, personalized insights
-              and adaptive tools that optimize healthspan and
-              align their entire care ecosystem around a smarter path to
-              long term wellbeing.
+              Our mission is to turn personal health data into clarity, action
+              and ongoing support. Cadensa is building an intelligent health
+              system that helps people understand what matters most, take
+              achievable action and stay engaged over time through guidance and
+              community. We believe lasting health comes from aligning insight,
+              action, and support.
             </p>
           </div>
         </div>
@@ -78,7 +81,7 @@ function FounderStory() {
             <p className="text-base sm:text-lg text-[#B4B4B6] mb-4 sm:mb-5">
               Cadensa is your personal health operating system - unifying data
               from wearables, labs, and lifestyle to deliver adaptive,
-              Al-powered prevention plans. It continuously learns from your
+              preventative guidance. It continuously learns from your
               unique health patterns, giving you early insights, evolving
               guidance, and coordinated support to help you age with strength
               and confidence.

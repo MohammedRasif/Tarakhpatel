@@ -115,6 +115,27 @@ const Navbar = () => {
               </>
             )}
           </NavLink>
+          <NavLink
+            to="/our_approach"
+            className={({ isActive }) =>
+              `relative font-medium transition-all duration-300 hover:text-white pb-2 ${
+                isActive ? "text-white" : ""
+              }`
+            }
+          >
+            {({ isActive }) => (
+              <>
+                Our approach
+                <span
+                  className={`absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-[#00953B] to-[#0068F0] rounded-full transition-all duration-500 ease-out ${
+                    isActive
+                      ? "scale-x-100 opacity-100"
+                      : "scale-x-0 opacity-0 hover:scale-x-100 hover:opacity-100"
+                  }`}
+                />
+              </>
+            )}
+          </NavLink>
         </div>
 
         {/* CTA Button - Hidden on Mobile */}
@@ -177,6 +198,19 @@ const Navbar = () => {
               }
             >
               About us
+            </NavLink>
+            <NavLink
+              to="/our_approach"
+              onClick={() => setMobileMenuOpen(false)}
+              className={({ isActive }) =>
+                `text-gray-300 font-medium text-lg py-3 px-4 rounded-xl transition-all duration-300 ${
+                  isActive
+                    ? "bg-gradient-to-r from-[#00953B] to-[#0068F0] text-white"
+                    : "hover:bg-white/10"
+                }`
+              }
+            >
+              Our approach
             </NavLink>
 
             {/* Mobile CTA Button */}

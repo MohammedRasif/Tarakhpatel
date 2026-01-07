@@ -27,14 +27,14 @@ const cardData = [
   },
   {
     icon: FaStethoscope,
-    title: "AI-Powered Insights        ",
-    description: "Translate raw data into clear, actionable guidance.",
+    title: "Adaptive Insights ",
+    description: "Translate raw data into clear, actionable guidance that evolves with your body",
   },
   {
     icon: FaParking,
-    title: "Adaptive Health span Plans",
+    title: "Supported Together",
     description:
-      "Plans that evolve as your body and life change.                          ",
+      "An intentional community to navigate the health journey with others.                     ",
   },
   {
     icon: GiMicroscope,

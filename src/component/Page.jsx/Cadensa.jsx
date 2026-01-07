@@ -10,8 +10,7 @@ function Cadensa() {
           Cadensa Orchestrates Your Health into One Unified System.
         </h1>
         <p className="text-[16px] text-gray-300 pt-5">
-          Cadensa is the worlds most personalized longevity ecosystem — an intelligent platform that unifies your health
-          data and transforms it into adaptive plans designed for your unique biology and goals.
+         Cadensa is an intelligent health system that transforms personal health data into practical wellness.
         </p>
       </div>
       <div className="relative flex items-center justify-center px-4">

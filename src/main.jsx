@@ -13,6 +13,7 @@ import WarningPage from './component/Page.jsx/Worning.jsx';
 import WhyChoice from './component/Page.jsx/WhyChoice.jsx';
 import FounderStory from './component/Page.jsx/FounderStory.jsx';
 import Trusted from './component/Page.jsx/Trusted.jsx';
+import OurApproach from './component/Page.jsx/OurApproach.jsx';
 
 const router = createBrowserRouter([
   {
@@ -36,7 +37,11 @@ const router = createBrowserRouter([
       {
         path:"/about_us",
         element:<Trusted/>,
-      }
+      },
+      {
+        path:"/our_approach",
+        element:<OurApproach/>,
+      },
     ],
   },
 

@@ -1,56 +1,56 @@
-"use client"
+"use client";
 import React, { useEffect, useState } from "react";
 import DotGrid from "../Home/DotGrid";
-import images from "../../image/Image.png";
+import images from "../../image/Image.jpeg";
 import { LuHeartHandshake } from "react-icons/lu";
 import video from "../../image/cadensa video.mp4";
 
 function Banner() {
-  const [progress, setProgress] = useState(0)
-  const [isModalOpen, setIsModalOpen] = useState(false)
-  const [showImage, setShowImage] = useState(false)
-  const currentIntake = 1500
-  const totalGoal = 2000
-  const progressPercentage = (currentIntake / totalGoal) * 100
+  const [progress, setProgress] = useState(0);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [showImage, setShowImage] = useState(false);
+  const currentIntake = 1500;
+  const totalGoal = 2000;
+  const progressPercentage = (currentIntake / totalGoal) * 100;
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setProgress(progressPercentage)
-    }, 100)
+      setProgress(progressPercentage);
+    }, 100);
 
-    return () => clearTimeout(timer)
-  }, [progressPercentage])
+    return () => clearTimeout(timer);
+  }, [progressPercentage]);
 
   const openModal = () => {
-    setIsModalOpen(true)
-    setShowImage(false)
-  }
+    setIsModalOpen(true);
+    setShowImage(false);
+  };
 
   const closeModal = () => {
-    setIsModalOpen(false)
-    setShowImage(false)
-  }
+    setIsModalOpen(false);
+    setShowImage(false);
+  };
 
   const handleVideoEnd = () => {
-    setShowImage(true)
-  }
+    setShowImage(true);
+  };
 
   return (
     <div className="bg-black min-h-screen relative">
       <div className="flex flex-col lg:flex-row items-center justify-between container mx-auto min-h-screen relative Archivo px-4 py-12 lg:py-10">
         <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
-          <h1 className="text-white text-[32px] font-medium leading-tight sm:text-[40px] md:text-[60px] lg:text-[75px]">
-            Worlds Most Personalized{" "}
-            <span className="bg-clip-text text-transparent bg-gradient-to-b from-[#00953B] to-[#0068F0] font-[550]">
-              Longevity
-            </span>
+          <h1 className="text-white text-[12px] font-medium leading-tight sm:text-[20px] md:text-[40px] lg:text-[45px]">
+            Cadensa brings your health into one intelligent system helping you
+            understand what matters most next, and how everything fits together{" "}
+            <span className="bg-clip-text text-transparent bg-gradient-to-b from-[#00953B] to-[#0068F0] font-[550]"></span>
             <br />
-            <span className="bg-clip-text text-transparent bg-gradient-to-b from-[#00953B] to-[#0068F0] font-[550]">
-              Ecosystem
-            </span>
+            <span className="bg-clip-text text-transparent bg-gradient-to-b from-[#00953B] to-[#0068F0] font-[550]"></span>
           </h1>
-          <p className="text-gray-400 text-[14px] pt-4 sm:text-[16px] md:text-[18px] lg:text-[20px]">
-            Unify your health data across devices, labs, lifestyle and support turning it into adaptive personalized healthspan plans.
+
+          <p className="text-gray-400 text-[14px]  sm:text-[16px] md:text-[18px] lg:text-[20px] pt-13">
+            Instead of more data, you get clarity. <br /> Instead of isolated
+            tools, you get guidance. <br /> Instead of doing it alone, you get
+            support.
           </p>
           {/* <div className="text-gray-300 mt-6 flex flex-wrap gap-3">
             <button className="rounded-full w-full sm:w-auto px-8 py-3 text-white font-semibold bg-gradient-to-r from-[#00953B] to-[#0068F0] cursor-pointer group text-[14px] lg:text-[16px]">
@@ -61,13 +61,23 @@ function Banner() {
           </div> */}
         </div>
 
-        <div className=" lg:flex w-full lg:w-1/2 justify-end relative">
+        <div className=" pt-16  w-full lg:w-1/2 justify-end relative lg:pl-10">
           <div>
-            <img src={images} className="h-[64vh] w-auto" alt="Health Dashboard" />
+            <img
+              src={images}
+              className="h-[64vh] rounded-xl w-auto"
+              alt="Health Dashboard"
+            />
           </div>
 
+          <div>
+            <p className="   px-2 text-gray-200 text-[14px] pt-4 sm:text-[16px] md:text-[18px] lg:text-[20px] pb-5">
+              Unify your health data across devices, labs, lifestyle and support
+              turning it into adaptive personalized healthspan plans.
+            </p>
+          </div>
           {/* Progress section */}
-          <div className="bg-white/30 backdrop-blur-md rounded-2xl p-6 shadow-lg h-[22vh] w-80 absolute bottom-1 lg:right-48 right-1 border border-white/20">
+          {/* <div className="bg-white/30 backdrop-blur-md rounded-2xl p-6 shadow-lg h-[22vh] w-80 absolute bottom-1 lg:right-48 right-1 border border-white/20">
             <div className="flex items-center gap-4 mb-6">
               <div className="relative w-12 h-12">
                 <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-400 to-teal-500 flex items-center justify-center">
@@ -98,7 +108,7 @@ function Banner() {
             <p className="px-5 py-1 rounded-full bg-gray-500/50">Empower</p>
             <p className="px-5 py-1 rounded-full bg-gray-500/50">Restore</p>
             <p className="px-5 py-1 rounded-full bg-gray-500/50">Better</p>
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -116,7 +126,12 @@ function Banner() {
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
               </svg>
             </button>
 
@@ -141,7 +156,7 @@ function Banner() {
         </div>
       )}
     </div>
-  )
+  );
 }
 
-export default Banner
+export default Banner;

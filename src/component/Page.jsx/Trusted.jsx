@@ -80,8 +80,7 @@ function Trusted() {
           </p>
           <p className="text-base sm:text-lg text-[#B4B4B6]">
             Along the way, I've seen how fragmented health data keeps patients from realizing their full health
-            potential. That's why I founded Cadensa: to unify wearables, labs, and AI-driven insights into one ecosystem
-            for longevity. The goal is to help people live in cadence with their health, so they can truly thrive.
+            potential. That's why I founded Cadensa: to unify wearables, labs, and AI-driven insights into one ecosystem for wellness. The goal is to help people live in cadence with their health, so they can truly thrive.
           </p>
         </div>
         <div className="w-full md:w-1/2 flex justify-center md:justify-end">
