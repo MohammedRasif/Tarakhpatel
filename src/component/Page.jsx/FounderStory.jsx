@@ -32,7 +32,7 @@ function FounderStory() {
       object-cover
       h-auto
       aspect-[4/3]          sm:aspect-[5/3]          lg:aspect-[16/9]     
-      max-h-[380px] sm:max-h-[450px] lg:max-h-[520px] 
+      max-h-[200px] sm:max-h-[400px] lg:max-h-[520px] 
       mx-auto
       relative z-10
     `}
