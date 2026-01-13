@@ -51,7 +51,6 @@ function FristBanner() {
             returnDuration={1.5}
           />
         </div>
-
         <div className="flex flex-col items-center justify-center container mx-auto min-h-screen relative Archivo px-4 py-12 lg:py-6 lg:pt-0 pt-28 ">
           <div className="w-full max-w-7xl text-center">
             <h1 className="  text-white text-[30px] leading-tight sm:text-[40px] md:text-[60px] lg:text-[65px]">
@@ -61,10 +60,10 @@ function FristBanner() {
               </span>
             </h1>
             <p className="lg:text-[42px] text-white">Launching January 2026</p>
-            <p className="text-gray-400 text-[16px] pt-4 sm:text-[18px] md:text-[22px] lg:text-[28px]">
+            <p className="text-gray-400 text-[14px] pt-4 sm:text-[18px] md:text-[22px] lg:text-[28px]">
               We turn personalized health data into clarity, direction
             </p>
-            <p className="text-gray-300 text-[14px] pt-3 sm:text-[16px] md:text-[18px] lg:text-[28px]">
+            <p className="text-gray-400 text-[14px] lg:pt-3 sm:text-[16px] md:text-[18px] lg:text-[28px]">
               and support-all in one place.
             </p>
             <div className="text-gray-300 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mt-6 sm:mt-8 w-full sm:w-auto">

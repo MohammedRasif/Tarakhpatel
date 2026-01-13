@@ -23,10 +23,19 @@ function FounderStory() {
           </p>
         </div>
         <div className="lg:flex items-center justify-between pt-8 lg:pt-24">
-          <div className="relative lg:w-1/2 lg:pr-16">
+          <div className="relative w-full">
             <img
               src={img1}
-              className="w-full rounded-2xl relative z-10 max-w-[300px] sm:max-w-[400px] md:max-w-[736px] lg:h-[415.16px] h-auto object-cover"
+              className={`
+      w-full
+      rounded-2xl
+      object-cover
+      h-auto
+      aspect-[4/3]          sm:aspect-[5/3]          lg:aspect-[16/9]     
+      max-h-[380px] sm:max-h-[450px] lg:max-h-[520px] // optional: control max height
+      mx-auto
+      relative z-10
+    `}
               alt=""
             />
           </div>
@@ -81,10 +90,9 @@ function FounderStory() {
             <p className="text-base sm:text-lg text-[#B4B4B6] mb-4 sm:mb-5">
               Cadensa is your personal health operating system - unifying data
               from wearables, labs, and lifestyle to deliver adaptive,
-              preventative guidance. It continuously learns from your
-              unique health patterns, giving you early insights, evolving
-              guidance, and coordinated support to help you age with strength
-              and confidence.
+              preventative guidance. It continuously learns from your unique
+              health patterns, giving you early insights, evolving guidance, and
+              coordinated support to help you age with strength and confidence.
             </p>
           </div>
         </div>
