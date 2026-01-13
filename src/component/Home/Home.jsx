@@ -19,7 +19,6 @@ const Home = () => {
       <Banner />
       <SecondSection></SecondSection>
       {/* <Healthspan></Healthspan> */}
-
       <Cadensa></Cadensa>
       {/* <Longevity></Longevity> */}
       {/* <WhyChoice></WhyChoice> */}
