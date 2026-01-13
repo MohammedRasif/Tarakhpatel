@@ -23,7 +23,7 @@ function FounderStory() {
           </p>
         </div>
         <div className="lg:flex items-center justify-between pt-8 lg:pt-24">
-          <div className="relative w-full">
+          <div className="relative  lg:w-1/2">
             <img
               src={img1}
               className={`
@@ -32,7 +32,7 @@ function FounderStory() {
       object-cover
       h-auto
       aspect-[4/3]          sm:aspect-[5/3]          lg:aspect-[16/9]     
-      max-h-[380px] sm:max-h-[450px] lg:max-h-[520px] // optional: control max height
+      max-h-[380px] sm:max-h-[450px] lg:max-h-[520px] 
       mx-auto
       relative z-10
     `}
